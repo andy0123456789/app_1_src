@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Data for plotting
-t = np.arange(0.0, 2.0, 0.01)
+t = np.arange(1.0, 2.0, 0.01)
 s = t*2
 
 # Note that using plt.subplots below is equivalent to using
@@ -10,9 +10,12 @@ s = t*2
 fig, ax = plt.subplots()
 ax.plot(t, s)
 
-ax.set(xlabel='time (s)', ylabel='voltage (mV)',
+ax.set(xlabel='0 (s)', ylabel='voltage (mV)',
        title='About as simple as it gets, folks')
 ax.grid()
 
 fig.savefig("test.png")
 plt.show()
+
+
+
